@@ -6,7 +6,7 @@
 # MLX Core Framework (Apple Silicon optimized)
 # ============================================
 mlx==0.22.0
-mlx-lm==0.21.1
+mlx-lm==0.22.1
 
 # ============================================
 # Image Processing (unchanged from original)
