@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+venv_mlx/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Models
+models/pytorch/
+models/mlx/
+models/converted/
+*.npz
+*.safetensors
+*.bin
+*.ckpt
+
+# Data & Output
+output/
+temp/
+*.jpeg
+*.jpg
+*.png
+!Templates/*.png
+Claude45/
+Qwen3/
+AWS_S3/
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+dataset.csv
+*.csv
+!requirements*.txt
+results/
+benchmark*.json
+
+# Cache
+.cache/
+huggingface_cache/
+.mlx_cache/

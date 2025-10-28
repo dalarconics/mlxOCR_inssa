@@ -1,0 +1,55 @@
+# OCR Formularios Processor - MLX Requirements
+# Optimized for macOS with Apple Silicon (M4 Max)
+# Migration to Apple MLX Framework
+
+# ============================================
+# MLX Core Framework (Apple Silicon optimized)
+# ============================================
+mlx==0.22.0
+mlx-lm==0.21.1
+
+# ============================================
+# Image Processing (unchanged from original)
+# ============================================
+opencv-python==4.10.0.84
+numpy==2.1.2
+matplotlib==3.9.2
+Pillow==10.4.0
+
+# ============================================
+# Tokenizer & Model Utilities
+# ============================================
+# Keep HuggingFace tokenizers for compatibility
+tokenizers==0.21.0
+# Minimal transformers for tokenizer only (no torch dependency)
+transformers==4.47.1
+# Safetensors for model loading
+safetensors==0.4.5
+
+# ============================================
+# Data Processing for Training
+# ============================================
+pandas==2.2.3
+datasets==3.2.0
+
+# ============================================
+# Optional: Development Tools
+# ============================================
+ipython==8.27.0
+tqdm==4.67.1
+
+# ============================================
+# Optional: Model Conversion Tools
+# ============================================
+# huggingface-hub for downloading models
+huggingface-hub==0.26.5
+
+# ============================================
+# NOTES:
+# ============================================
+# 1. PyTorch has been REMOVED - MLX replaces it
+# 2. No torch backend needed - MLX handles Apple Silicon natively
+# 3. Transformers kept minimal (tokenizers only, no torch extras)
+# 4. All image processing libraries remain unchanged
+# 5. MLX provides automatic unified memory management
+# 6. Expected performance improvement: 2-3x over PyTorch MPS
